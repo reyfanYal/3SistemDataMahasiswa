@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;900&amp;family=Space+Mono:wght@700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface-variant":"#45474b","on-background":"#171c23","on-primary-container":"#808590","outline":"#76777c","tertiary-fixed":"#dae1ff","on-tertiary-fixed-variant":"#0e409e","on-secondary":"#ffffff","on-secondary-fixed":"#3b0900","primary":"#000208","on-primary-fixed-variant":"#424751","surface-container-highest":"#dee2ed","error":"#ba1a1a","on-error":"#ffffff","on-error-container":"#93000a","secondary-fixed":"#ffdbd1","on-primary":"#ffffff","on-secondary-container":"#601500","secondary-fixed-dim":"#ffb5a0","error-container":"#ffdad6","inverse-primary":"#c2c6d3","outline-variant":"#c6c6cc","on-secondary-fixed-variant":"#862200","on-tertiary":"#ffffff","surface-dim":"#d6dae4","inverse-on-surface":"#edf1fb","tertiary-container":"#00194c","inverse-surface":"#2c3139","secondary":"#af3003","surface-container-high":"#e4e8f3","surface":"#f8f9ff","on-primary-fixed":"#171c25","tertiary":"#00020e","on-tertiary-container":"#5c81e1","surface-bright":"#f8f9ff","on-tertiary-fixed":"#001849","surface-container":"#eaeef8","background":"#f8f9ff","primary-container":"#181d26","surface-variant":"#dee2ed","surface-container-low":"#eff4fe","tertiary-fixed-dim":"#b3c5ff","primary-fixed":"#dee2ef","on-surface":"#171c23","surface-container-lowest":"#ffffff","primary-fixed-dim":"#c2c6d3","secondary-container":"#ff693c","surface-tint":"#5a5e69"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-md":"1rem","space-xl":"2.5rem","gutter":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","margin":"2rem"},"fontFamily":{"display-hero":["Space Grotesk"],"label-field":["Inter"],"badge-label":["Inter"],"headline-lg":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-md":["Inter"],"code-nim":["Space Mono"],"headline-lg-mobile":["Space Grotesk"],"display-hero-mobile":["Space Grotesk"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-md":["Space Grotesk"]},"fontSize":{"display-hero":["48px",{"lineHeight":"54px","letterSpacing":"-0.03em","fontWeight":"900"}],"label-field":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"badge-label":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"code-nim":["13px",{"lineHeight":"18px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-hero-mobile":["34px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"900"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-on-surface/10 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><img alt="SIM Biodata Mahasiswa Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XV4_nCT8Db00eiK-MD1OrCamdIu0enfsLPt49EXuomyTk4GmU7l8j3TJv2Y7aRIoMookqwUwV_ExW5ek2omdkLfIdkBIF_l5Xg0FLxD6FK7MCJaqkZwRdxUcl7vfnOW86oFSKymj2zzkiF0O8zrD5qL7mxBhn6tJqPO5w_ZWrQaq-Y8P1XEtOxPR7vAKiFWNw7Zx_OSw8GZOPFy-CB20XR1P98l1XHERD8ZS0Fp4bZGY2AA4fVYEVQmA"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">SIM Biodata Mahasiswa</span><span class="font-badge-label text-badge-label bg-surface-container px-space-sm py-0.5 rounded-full text-on-surface-variant font-semibold tracking-wide uppercase">Akademik v2.4</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Sistem Informasi Arsip &amp; Registri Akademik</span></div></div><div class="flex-1 max-w-xl hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full bg-surface-container pl-11 pr-space-md py-space-sm rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 border-0 focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Cari mahasiswa berdasarkan NIM, nama, atau prodi... [⌘K]" type="text"/></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-lg border border-outline-variant/40"><span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span><span class="font-label-field text-label-field text-on-surface-variant uppercase tracking-wider">Semester</span><span class="font-code-nim text-code-nim text-primary ml-space-xs">Ganjil 2024/2025</span></div><button aria-label="Notifikasi" class="relative p-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="h-7 w-[1px] bg-outline-variant/60 hidden sm:block"></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxQuVv8JlQAShgJOzwwxFI2rUE5kpeKwZcCWiPmHXA5S7iKYEWBOE5p2MgAN5EKUeg7EvShnU_em3ApmWNGjPm-dcEdZhgc3cCvLuY913yMPNaNMCUhbCA0MwSMPW1Idj7BWBxlXW8NN2hK_u4vtCyxhn40BbfMBYypxNpOk2_LYdm2S44U4M3rdoNPOsEejP-UurcM4IK63QBivm0Ikm0qK-P-4oU48o9tFQXAFKc54nRKdb5xBa2"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-field text-label-field text-primary leading-tight">Dr. Ratna S. Dewi, M.Kom</span><span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">Registrar Admin</span></div></div><a class="font-label-field text-label-field text-on-surface-variant hover:text-secondary transition-colors ml-space-xs pl-space-xs hidden sm:inline-flex items-center" data-path="login" href="#">Keluar</a></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-64 bg-surface-container-lowest border-r border-on-surface/10 z-40 flex flex-col py-space-lg"><div class="px-space-lg mb-space-md"><span class="font-badge-label text-badge-label uppercase text-on-surface-variant tracking-wider">Registri Dossier</span></div><nav class="flex-1 px-space-md space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dossier-registry" href="#">Direktori Mahasiswa</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="input-biodata" href="#">Registrasi Biodata</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="verifikasi-berkas" href="#">Verifikasi Berkas</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="laporan-registrasi" href="#">Laporan &amp; Kohort</a><div class="pt-space-md mt-space-md border-t border-outline-variant/30"><span class="px-space-md font-badge-label text-badge-label uppercase text-on-surface-variant tracking-wider block mb-space-sm">Konfigurasi</span><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary font-bold shadow-sm" data-path="pengaturan-program" href="#">Pengaturan Program</a></div></nav><div class="px-space-lg pt-space-md border-t border-outline-variant/30 text-on-surface-variant"><div class="flex items-center gap-space-xs text-[11px] font-code-nim"><span class="w-2 h-2 rounded-full bg-secondary-container inline-block"></span><span>DATABASE READY</span></div></div></aside><div class="pl-64"><main class="relative pt-20 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Archival Canvas Wrapper -->
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin pb-space-xl flex flex-col gap-space-lg">
+<!-- HEADER & BREADCRUMB SECTION -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<!-- Breadcrumb & Badge -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1.5 font-label-field text-label-field text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Beranda</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Konfigurasi</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Pengaturan Program &amp; Kuota Akademik</span>
+</div>
+<span class="font-code-nim text-[11px] bg-surface-container-high text-on-surface px-2.5 py-0.5 rounded-full uppercase tracking-wider font-bold">
+            #CFG-2024 / REV-4
+          </span>
+</div>
+<!-- System Time & Status -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-nim text-[11px]">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>KONFIGURASI AKTIF: GANJIL 2024/2025</span>
+</div>
+</div>
+<!-- Main Headline & Quick CTAs -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md mt-space-xs">
+<div class="flex flex-col max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Pengaturan Program Studi &amp; Kebijakan Registrasi
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+            Kelola matriks kuota penerimaan tiap jalur, skema penomoran NIM otomatis beraturan reguler, verifikasi mandatori dokumen digital, serta sinkronisasi endpoint API PDDIKTI NeoFeeder dan Dukcapil.
+          </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-1.5 px-4 py-2.5 bg-surface-container-lowest text-primary rounded-xl font-headline-sm text-body-md hover:bg-surface-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Audit Log</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2.5 bg-surface-container-lowest text-primary rounded-xl font-headline-sm text-body-md hover:bg-surface-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sinkronisasi Data</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-primary-container text-on-primary rounded-xl font-headline-sm text-body-md hover:opacity-90 active:scale-[0.98] transition-all shadow-sm">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Tambah Program Studi</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4 PARAMETER SUMMARY TILES (Bento Style with Accent Ribbons) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Terracotta -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-5 shadow-sm overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label uppercase text-on-surface-variant tracking-wider">Program Studi</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary">18</span>
+<span class="font-label-field text-label-field text-secondary font-bold">Prodi Aktif</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low -mx-5 -mb-5 px-5 py-2.5 flex items-center justify-between text-on-surface-variant font-body-sm text-[11px]">
+<span>14 Sarjana (S1)</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>4 Terapan (D4/D3)</span>
+</div>
+</div>
+<!-- Card 2: Forest Ink -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-5 shadow-sm overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label uppercase text-on-surface-variant tracking-wider">Kapasitas Kuota</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary">2.650</span>
+<span class="font-label-field text-label-field text-on-surface-variant font-bold">Kursi</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">group_add</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low -mx-5 -mb-5 px-5 py-2.5 flex items-center gap-2">
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 93.5%"></div>
+</div>
+<span class="font-code-nim text-[11px] text-primary font-bold whitespace-nowrap">93.5%</span>
+</div>
+</div>
+<!-- Card 3: Sapphire Blue -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-5 shadow-sm overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-tertiary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label uppercase text-on-surface-variant tracking-wider">Jalur Masuk</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary">4</span>
+<span class="font-label-field text-label-field text-on-surface-variant font-bold">Skema Aktif</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]">alt_route</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low -mx-5 -mb-5 px-5 py-2.5 flex items-center justify-between text-on-surface-variant font-body-sm text-[11px]">
+<span>SNBP (30%)</span>
+<span>SNBT (40%)</span>
+<span>Mandiri (30%)</span>
+</div>
+</div>
+<!-- Card 4: Coral Gold / Amber -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-5 shadow-sm overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-badge-label text-badge-label uppercase text-on-surface-variant tracking-wider">Validasi Berkas</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary">6</span>
+<span class="font-label-field text-label-field text-secondary-container font-bold">Dokumen Wajib</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low -mx-5 -mb-5 px-5 py-2.5 flex items-center justify-between text-on-surface-variant font-body-sm text-[11px]">
+<span>KTP • KK • Ijazah</span>
+<span class="font-code-nim text-secondary font-bold">OCR ON</span>
+</div>
+</div>
+</div>
+<!-- EDITORIAL SUB-NAVIGATION TABS -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-headline-sm text-body-md shadow-sm shrink-0 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">list_alt</span>
+<span>Daftar &amp; Kuota Program Studi</span>
+</button>
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-headline-sm text-body-md shrink-0 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">folder_special</span>
+<span>Skema Dokumen &amp; Validasi</span>
+</button>
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-headline-sm text-body-md shrink-0 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">pin</span>
+<span>Aturan Generator NIM</span>
+</button>
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-headline-sm text-body-md shrink-0 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">api</span>
+<span>Integrasi &amp; API Gateway</span>
+</button>
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-headline-sm text-body-md shrink-0 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">event_repeat</span>
+<span>Jadwal Gelombang Pendaftaran</span>
+</button>
+</div>
+<!-- MAIN TWO-COLUMN WORKBENCH -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT SECTION: PROGRAM MANAGEMENT TABLE (Col 8) -->
+<section class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col">
+<!-- Filter & Control Header -->
+<div class="p-4 sm:p-5 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm bg-surface-container-low">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="prodi-search-input" placeholder="Cari kode atau nama program studi..." type="text"/>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<select class="px-3 py-2 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary shadow-inner cursor-pointer" id="faculty-filter-select">
+<option value="ALL">Semua Fakultas</option>
+<option value="FASILKOM">FASILKOM (Ilmu Komputer)</option>
+<option value="FTEK">FTEK (Teknik Elektro &amp; Rekayasa)</option>
+<option value="FSRD">FSRD (Seni Rupa &amp; Desain)</option>
+<option value="FTI">FTI (Teknologi Industri)</option>
+</select>
+<select class="px-3 py-2 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary shadow-inner cursor-pointer" id="degree-filter-select">
+<option value="ALL">Semua Jenjang</option>
+<option value="S1">Sarjana (S1)</option>
+<option value="D4">Sarjana Terapan (D4)</option>
+</select>
+<button class="p-2 bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant rounded-xl transition-colors" title="Export CSV Kuota">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Relational Registry Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="prodi-table">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-headline-sm text-[12px] uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Kode</th>
+<th class="py-3 px-4 font-semibold">Program Studi &amp; Fakultas</th>
+<th class="py-3 px-3 font-semibold text-center">Jenjang</th>
+<th class="py-3 px-3 font-semibold text-center">Akreditasi</th>
+<th class="py-3 px-4 font-semibold">Total Kuota</th>
+<th class="py-3 px-4 font-semibold">Alokasi Seleksi</th>
+<th class="py-3 px-3 font-semibold text-center">Status</th>
+<th class="py-3 px-4 font-semibold text-right">Tindakan</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-md text-on-surface font-body-md">
+<!-- Row 1: IF-101 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4 font-code-nim text-code-nim text-primary font-bold whitespace-nowrap">
+<span class="bg-surface-container-high px-2 py-0.5 rounded">IF-101</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md font-semibold text-primary">S1 Teknik Informatika</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fakultas Ilmu Komputer • Gedung A</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-badge-label bg-surface-container px-2 py-0.5 rounded text-on-surface font-bold">S1</span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-[11px] bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">Unggul</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-28">
+<div class="flex justify-between font-code-nim text-[12px]">
+<span class="font-bold text-primary">120</span>
+<span class="text-on-surface-variant">114 Isi</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 95%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-nim text-[11px]">
+<div class="flex items-center gap-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded" title="SNBP">BP: 36</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded" title="SNBT">BT: 48</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded" title="Mandiri">MN: 36</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<button aria-checked="true" class="relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleStatus(this)" role="switch">
+<span class="translate-x-4 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Ubah Kuota">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Edit Profil">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: SI-102 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4 font-code-nim text-code-nim text-primary font-bold whitespace-nowrap">
+<span class="bg-surface-container-high px-2 py-0.5 rounded">SI-102</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md font-semibold text-primary">S1 Sistem Informasi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fakultas Ilmu Komputer • Gedung A</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-badge-label bg-surface-container px-2 py-0.5 rounded text-on-surface font-bold">S1</span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-[11px] bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">Unggul</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-28">
+<div class="flex justify-between font-code-nim text-[12px]">
+<span class="font-bold text-primary">100</span>
+<span class="text-on-surface-variant">92 Isi</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-nim text-[11px]">
+<div class="flex items-center gap-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded">BP: 30</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded">BT: 40</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded">MN: 30</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<button aria-checked="true" class="relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleStatus(this)" role="switch">
+<span class="translate-x-4 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Ubah Kuota">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Edit Profil">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: EL-201 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4 font-code-nim text-code-nim text-primary font-bold whitespace-nowrap">
+<span class="bg-surface-container-high px-2 py-0.5 rounded">EL-201</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md font-semibold text-primary">S1 Teknik Elektro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fakultas Teknik &amp; Rekayasa • Lab Timur</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-badge-label bg-surface-container px-2 py-0.5 rounded text-on-surface font-bold">S1</span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-[11px] bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-0.5 rounded-full font-bold">Akreditasi A</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-28">
+<div class="flex justify-between font-code-nim text-[12px]">
+<span class="font-bold text-primary">80</span>
+<span class="text-on-surface-variant">74 Isi</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 92.5%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-nim text-[11px]">
+<div class="flex items-center gap-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded">BP: 24</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded">BT: 32</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded">MN: 24</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<button aria-checked="true" class="relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleStatus(this)" role="switch">
+<span class="translate-x-4 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Ubah Kuota">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Edit Profil">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: DK-301 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4 font-code-nim text-code-nim text-primary font-bold whitespace-nowrap">
+<span class="bg-surface-container-high px-2 py-0.5 rounded">DK-301</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md font-semibold text-primary">S1 Desain Komunikasi Visual</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fakultas Seni Rupa &amp; Desain • Studio 4</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-badge-label bg-surface-container px-2 py-0.5 rounded text-on-surface font-bold">S1</span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-[11px] bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">Unggul</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-28">
+<div class="flex justify-between font-code-nim text-[12px]">
+<span class="font-bold text-primary">90</span>
+<span class="text-on-surface-variant">88 Isi</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 97.7%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-nim text-[11px]">
+<div class="flex items-center gap-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded">BP: 27</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded">BT: 36</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded">MN: 27</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<button aria-checked="true" class="relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleStatus(this)" role="switch">
+<span class="translate-x-4 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Ubah Kuota">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Edit Profil">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: MR-202 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4 font-code-nim text-code-nim text-primary font-bold whitespace-nowrap">
+<span class="bg-surface-container-high px-2 py-0.5 rounded">MR-202</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md font-semibold text-primary">S1 Manajemen Rekayasa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fakultas Teknik &amp; Rekayasa • Gedung B</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-badge-label bg-surface-container px-2 py-0.5 rounded text-on-surface font-bold">S1</span>
+</td>
+<td class="py-3.5 px-3 text-center whitespace-nowrap">
+<span class="font-badge-label text-[11px] bg-surface-container-highest text-on-surface-variant px-2 py-0.5 rounded-full font-bold">Baik Sekali</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-28">
+<div class="flex justify-between font-code-nim text-[12px]">
+<span class="font-bold text-primary">60</span>
+<span class="text-on-surface-variant">42 Isi</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 70%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-nim text-[11px]">
+<div class="flex items-center gap-1.5">
+<span class="bg-surface-container px-1.5 py-0.5 rounded">BP: 18</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded">BT: 24</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded">MN: 18</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<button aria-checked="true" class="relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleStatus(this)" role="switch">
+<span class="translate-x-4 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Ubah Kuota">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container transition-colors" title="Edit Profil">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="p-4 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3 text-on-surface-variant font-body-sm text-[12px]">
+<div class="flex items-center gap-2">
+<span>Menampilkan <strong class="text-primary font-code-nim">1-5</strong> dari <strong class="text-primary font-code-nim">18</strong> Program Studi Aktif</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center hover:bg-surface-container-highest transition-colors disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary font-bold flex items-center justify-center shadow-xs">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors font-medium flex items-center justify-center">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors font-medium flex items-center justify-center">3</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors font-medium flex items-center justify-center">4</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Info Callout Banner -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex items-start gap-4">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-body-md font-bold text-primary">Regulasi Alokasi Daya Tampung SNPMB 2024</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+              Berdasarkan Permendikbudristek No. 48 Tahun 2022, kuota minimum jalur SNBP adalah 20%, SNBT minimum 40%, dan kuota Mandiri maksimum 30% dari total daya tampung prodi PTN-BH / BLU. Matriks kuota di atas telah disesuaikan secara proporsional.
+            </p>
+</div>
+</div>
+</section>
+<!-- RIGHT SECTION: QUICK POLICY CONFIGURATION PANELS (Col 4) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- CARD 1: NIM GENERATOR FORMAT -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-3 bg-surface-container-low -mx-5 -mt-5 px-5 pt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Generator Format NIM</h3>
+</div>
+<span class="font-badge-label text-[10px] bg-surface-container px-2 py-0.5 rounded uppercase font-bold text-on-surface-variant">RULE-V3</span>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-field text-label-field text-on-surface-variant uppercase tracking-wider">Pola Skema Penomoran</label>
+<div class="relative">
+<input class="w-full font-code-nim text-code-nim bg-surface-container-low px-3.5 py-2.5 rounded-xl text-primary font-bold focus:outline-none focus:ring-1 focus:ring-primary" id="nim-format-input" type="text" value="[TAHUN:4][KODE_PRODI:3][JALUR:1][URUT:3]"/>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Variabel didukung: [TAHUN], [KODE_PRODI], [JENJANG], [JALUR], [URUT]</p>
+</div>
+<!-- Realtime Preview Badge -->
+<div class="bg-surface-container p-4 rounded-xl flex flex-col gap-1.5">
+<span class="font-badge-label text-[11px] uppercase text-on-surface-variant tracking-wider">Pratinjau Output Realtime:</span>
+<div class="flex items-center justify-between">
+<span class="font-code-nim text-[18px] text-primary tracking-widest font-black" id="nim-preview">2024091059</span>
+<span class="font-badge-label text-[10px] bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">Valid Formula</span>
+</div>
+<div class="text-[11px] font-body-sm text-on-surface-variant mt-1 space-y-0.5">
+<div>• <strong>2024</strong>: Tahun Masuk Angkatan</div>
+<div>• <strong>091</strong>: Kode Prodi S1 Informatika</div>
+<div>• <strong>0</strong>: Kode Jalur SNBP (Reguler)</div>
+<div>• <strong>059</strong>: Nomor Urut Registrasi Ulang</div>
+</div>
+</div>
+<!-- Policy Toggles -->
+<div class="flex flex-col gap-2.5 pt-1">
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary-container" type="checkbox"/>
+<span class="font-body-sm text-[12px] text-on-surface">Kunci NIM otomatis saat status berkas 100% tervalidasi</span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary-container" type="checkbox"/>
+<span class="font-body-sm text-[12px] text-on-surface">Reset nomor urut per jalur masuk dan per semester</span>
+</label>
+</div>
+<button class="w-full mt-1 py-2.5 bg-primary-container text-on-primary rounded-xl font-headline-sm text-body-md hover:opacity-90 active:scale-[0.99] transition-all shadow-sm">
+            Simpan Aturan NIM
+          </button>
+</div>
+<!-- CARD 2: DOCUMENT REQUIREMENTS MATRIX -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col gap-3.5">
+<div class="flex items-center justify-between pb-3 bg-surface-container-low -mx-5 -mt-5 px-5 pt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Matriks Dokumen Wajib</h3>
+</div>
+<span class="font-code-nim text-[11px] text-on-surface-variant font-bold">6 SYARAT</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant">
+            Pilih berkas mandatori yang harus diunggah peserta saat tahapan registrasi ulang:
+          </p>
+<div class="flex flex-col gap-2">
+<!-- Item 1 -->
+<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-primary">Scan KTP / NIK Mahasiswa</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Semua Jalur • Wajib OCR &amp; Dukcapil</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</label>
+<!-- Item 2 -->
+<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-primary">Ijazah / SKL Asli Terlegalisir</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Min. Resolusi 300 DPI PDF</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</label>
+<!-- Item 3 -->
+<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-primary">Kartu Keluarga (KK Asli)</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Cek Silang NIK Kepala Keluarga</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</label>
+<!-- Item 4 -->
+<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-primary">Slip Gaji / Ket. Penghasilan</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Wajib untuk Penetapan Gol. UKT</span>
+</div>
+</div>
+<span class="font-code-nim text-[10px] bg-surface-container px-1.5 py-0.5 rounded">UKT</span>
+</label>
+<!-- Item 5 -->
+<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-primary">Portofolio Karya Seni / Desain</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Khusus Pendaftar Fakultas FSRD</span>
+</div>
+</div>
+<span class="font-code-nim text-[10px] bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded">FSRD</span>
+</label>
+<!-- Item 6 -->
+<label class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-sm text-[12px] font-semibold text-primary">Pakta Integritas &amp; Bebas Narkoba</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Materai Rp 10.000 / e-Materai</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+</label>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-[11px]">
+<span>Berlaku untuk: <strong>Angkatan 2024</strong></span>
+<a class="text-secondary font-semibold hover:underline" href="#">Kelola Template →</a>
+</div>
+</div>
+<!-- CARD 3: SINKRONISASI API PDDIKTI & DUKCAPIL -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col gap-3.5">
+<div class="flex items-center justify-between pb-3 bg-surface-container-low -mx-5 -mt-5 px-5 pt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Integrasi &amp; Endpoint</h3>
+</div>
+<span class="flex items-center gap-1 font-code-nim text-[11px] text-secondary font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+              ALL LIVE
+            </span>
+</div>
+<!-- Endpoint 1 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-sm font-semibold text-primary">PDDIKTI NeoFeeder WS</span>
+<span class="font-badge-label text-[10px] bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">Connected</span>
+</div>
+<div class="flex items-center justify-between text-[11px] font-code-nim text-on-surface-variant">
+<span>Token: EXP-28D</span>
+<span>Latensi: 42ms</span>
+</div>
+</div>
+<!-- Endpoint 2 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-sm font-semibold text-primary">Dukcapil NIK Gateway</span>
+<span class="font-badge-label text-[10px] bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">Connected</span>
+</div>
+<div class="flex items-center justify-between text-[11px] font-code-nim text-on-surface-variant">
+<span>Kuota Hari Ini: 1.840/5.000</span>
+<span>Hit Rate: 99.4%</span>
+</div>
+</div>
+<!-- Endpoint 3 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-sm font-semibold text-primary">SMTP Mailer Registrasi</span>
+<span class="font-badge-label text-[10px] bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full font-bold">Port 587 TLS</span>
+</div>
+<div class="flex items-center justify-between text-[11px] font-code-nim text-on-surface-variant">
+<span>Queue: 0 pending</span>
+<span>Auth: Active</span>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container text-primary rounded-xl font-headline-sm text-body-sm hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" onclick="pingEndpoints(this)">
+<span class="material-symbols-outlined text-[16px]">network_ping</span>
+<span>Uji Koneksi Endpoint</span>
+</button>
+</div>
+</aside>
+</div>
+<!-- STICKY ACTION BAR / FOOTER WORKFLOW PANEL -->
+<div class="sticky bottom-4 z-30 bg-surface-container-lowest/95 backdrop-blur-md rounded-2xl p-4 sm:px-6 shadow-md flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-[12px]">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="text-primary font-semibold">Status Konfigurasi: Tersinkronisasi Penuh</span>
+<span>Terakhir diubah oleh <strong>Dr. Ratna S. Dewi (Registrar Admin)</strong> • 14 Okt 2024, 08:45 WIB</span>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<button class="px-4 py-2 text-on-surface-variant hover:text-primary rounded-xl font-headline-sm text-body-md hover:bg-surface-container transition-colors">
+          Reset ke Default
+        </button>
+<button class="flex items-center gap-2 px-6 py-2.5 bg-primary-container text-on-primary rounded-xl font-headline-sm text-body-md hover:opacity-90 active:scale-[0.98] transition-all shadow-sm" onclick="saveAllChanges(this)">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Simpan Semua Perubahan</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter Functionality for Search and Dropdowns
+  const searchInput = document.getElementById('prodi-search-input');
+  const facultyFilter = document.getElementById('faculty-filter-select');
+  const prodiTable = document.getElementById('prodi-table');
+
+  function filterTable() {
+    if (!prodiTable) return;
+    const query = (searchInput?.value || '').toLowerCase();
+    const faculty = facultyFilter?.value || 'ALL';
+    const rows = prodiTable.querySelectorAll('tbody tr');
+
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      const matchesSearch = text.includes(query);
+      const matchesFaculty = faculty === 'ALL' || text.includes(faculty.toLowerCase());
+
+      if (matchesSearch && matchesFaculty) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  searchInput?.addEventListener('input', filterTable);
+  facultyFilter?.addEventListener('change', filterTable);
+
+  // Toggle Status Switch
+  function toggleStatus(btn) {
+    const isChecked = btn.getAttribute('aria-checked') === 'true';
+    btn.setAttribute('aria-checked', !isChecked);
+    const circle = btn.querySelector('span');
+
+    if (isChecked) {
+      btn.classList.remove('bg-primary-container');
+      btn.classList.add('bg-surface-container-highest');
+      circle.classList.remove('translate-x-4');
+      circle.classList.add('translate-x-0');
+    } else {
+      btn.classList.remove('bg-surface-container-highest');
+      btn.classList.add('bg-primary-container');
+      circle.classList.remove('translate-x-0');
+      circle.classList.add('translate-x-4');
+    }
+  }
+
+  // Ping Endpoints Simulation
+  function pingEndpoints(btn) {
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>Menguji Latensi Endpoint...</span>`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Semua Endpoint Online (32ms)</span>`;
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }, 2500);
+    }, 1200);
+  }
+
+  // Save All Changes Simulation
+  function saveAllChanges(btn) {
+    const originalContent = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Menyimpan Konfigurasi...</span>`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">done</span><span>Tersimpan di Registri!</span>`;
+      btn.classList.remove('bg-primary-container');
+      btn.classList.add('bg-secondary');
+
+      setTimeout(() => {
+        btn.innerHTML = originalContent;
+        btn.classList.remove('bg-secondary');
+        btn.classList.add('bg-primary-container');
+        btn.disabled = false;
+      }, 2000);
+    }, 900);
+  }
+</script></main></div></body></html>

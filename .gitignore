@@ -1,0 +1,13 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Uploads (pertahankan folder, abaikan file dummy jika diinginkan)
+# uploads/foto/*
+# !uploads/foto/.gitkeep
+# uploads/dokumen/*
+# !uploads/dokumen/.gitkeep
+

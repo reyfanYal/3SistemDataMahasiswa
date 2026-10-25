@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;900&amp;family=Space+Mono:wght@700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#c2c6d3","on-primary":"#ffffff","surface-bright":"#f8f9ff","inverse-surface":"#2c3139","primary":"#000208","on-primary-container":"#808590","outline":"#76777c","inverse-on-surface":"#edf1fb","surface-dim":"#d6dae4","on-tertiary":"#ffffff","primary-fixed":"#dee2ef","on-secondary-container":"#601500","outline-variant":"#c6c6cc","primary-fixed-dim":"#c2c6d3","on-error":"#ffffff","primary-container":"#181d26","tertiary-fixed":"#dae1ff","on-tertiary-fixed-variant":"#0e409e","surface-tint":"#5a5e69","secondary-fixed":"#ffdbd1","secondary-container":"#ff693c","tertiary-fixed-dim":"#b3c5ff","error-container":"#ffdad6","surface-variant":"#dee2ed","on-surface":"#171c23","surface-container-low":"#eff4fe","on-secondary":"#ffffff","surface":"#f8f9ff","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#001849","on-secondary-fixed":"#3b0900","on-background":"#171c23","secondary":"#af3003","tertiary-container":"#00194c","on-secondary-fixed-variant":"#862200","tertiary":"#00020e","on-primary-fixed-variant":"#424751","on-primary-fixed":"#171c25","on-surface-variant":"#45474b","background":"#f8f9ff","surface-container":"#eaeef8","on-tertiary-container":"#5c81e1","error":"#ba1a1a","surface-container-high":"#e4e8f3","surface-container-highest":"#dee2ed","secondary-fixed-dim":"#ffb5a0","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","margin":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter":"1.5rem","space-xl":"2.5rem","gutter-mobile":"1rem","margin-mobile":"1rem","space-md":"1rem"},"fontFamily":{"display-hero":["Space Grotesk"],"body-sm":["Inter"],"body-lg":["Inter"],"label-field":["Inter"],"display-hero-mobile":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"code-nim":["Space Mono"],"badge-label":["Inter"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-md":["Inter"]},"fontSize":{"display-hero":["48px",{"lineHeight":"54px","letterSpacing":"-0.03em","fontWeight":"900"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"label-field":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-hero-mobile":["34px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"900"}],"headline-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"code-nim":["13px",{"lineHeight":"18px","letterSpacing":"0.05em","fontWeight":"700"}],"badge-label":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><img alt="SIM Biodata Mahasiswa Emblem" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XV4_nCT8Db00eiK-MD1OrCamdIu0enfsLPt49EXuomyTk4GmU7l8j3TJv2Y7aRIoMookqwUwV_ExW5ek2omdkLfIdkBIF_l5Xg0FLxD6FK7MCJaqkZwRdxUcl7vfnOW86oFSKymj2zzkiF0O8zrD5qL7mxBhn6tJqPO5w_ZWrQaq-Y8P1XEtOxPR7vAKiFWNw7Zx_OSw8GZOPFy-CB20XR1P98l1XHERD8ZS0Fp4bZGY2AA4fVYEVQmA"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">SIM Biodata Mahasiswa</span><span class="font-badge-label text-badge-label bg-surface-container px-space-sm py-0.5 rounded-full text-on-surface-variant font-semibold tracking-wide uppercase">Akademik v2.4</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Sistem Informasi Arsip &amp; Registri Akademik</span></div></div><div class="flex-1 max-w-xl hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full bg-surface-container-low pl-11 pr-space-md py-space-sm rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 border-0 focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Cari mahasiswa berdasarkan NIM, nama, atau prodi... [⌘K]" type="text"/></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-lg"><span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span><span class="font-label-field text-label-field text-on-surface-variant uppercase tracking-wider">Semester</span><span class="font-code-nim text-code-nim text-primary ml-space-xs">Ganjil 2024/2025</span></div><button aria-label="Notifikasi" class="relative p-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-9 h-9 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxQuVv8JlQAShgJOzwwxFI2rUE5kpeKwZcCWiPmHXA5S7iKYEWBOE5p2MgAN5EKUeg7EvShnU_em3ApmWNGjPm-dcEdZhgc3cCvLuY913yMPNaNMCUhbCA0MwSMPW1Idj7BWBxlXW8NN2hK_u4vtCyxhn40BbfMBYypxNpOk2_LYdm2S44U4M3rdoNPOsEejP-UurcM4IK63QBivm0Ikm0qK-P-4oU48o9tFQXAFKc54nRKdb5xBa2"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-field text-label-field text-primary leading-tight">Dr. Ratna S. Dewi, M.Kom</span><span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">Registrar Admin</span></div></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col py-space-lg shadow-[2px_0_12px_rgba(0,0,0,0.02)]"><div class="px-space-lg mb-space-md"><span class="font-badge-label text-badge-label uppercase text-on-surface-variant tracking-wider">Registri Dossier</span></div><nav class="flex-1 px-space-md space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="direktori-mahasiswa" href="#"><span class="font-body-md text-body-md">Direktori Mahasiswa</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="registrasi-biodata" href="#"><span class="font-body-md text-body-md">Registrasi Biodata</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="verifikasi-berkas" href="#"><span class="font-body-md text-body-md">Verifikasi Berkas</span></a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="laporan-kohort" href="#"><span class="font-body-md text-body-md">Laporan &amp; Kohort</span></a><div class="pt-space-md mt-space-md border-t border-surface-container"><span class="px-space-md font-badge-label text-badge-label uppercase text-on-surface-variant tracking-wider block mb-space-sm">Konfigurasi</span><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pengaturan-program" href="#"><span class="font-body-md text-body-md">Pengaturan Program</span></a></div></nav><div class="px-space-lg pt-space-md text-on-surface-variant"><div class="flex items-center gap-space-xs text-[11px] font-code-nim"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span><span>DATABASE READY</span></div></div></aside><div class="pl-64"><main class="relative pt-20 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="max-w-[1440px] w-full mx-auto px-margin-mobile md:px-margin pb-space-xl space-y-space-lg">
+<!-- Header & Breadcrumbs Area -->
+<section class="space-y-space-sm pt-space-md">
+<!-- Breadcrumb navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="hover:text-primary transition-colors cursor-pointer">Beranda</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Laporan &amp; Kohort</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="text-primary font-medium">Analitik Biodata, Retensi &amp; Kelengkapan Mahasiswa</span>
+</nav>
+<!-- Editorial Title & Lead Metadata -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pt-space-xs">
+<div class="max-w-4xl space-y-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Laporan Kohort &amp; Analitik Demografi Mahasiswa
+            </h1>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-badge-label text-badge-label uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Live Sync PDDIKTI
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Pemetaan tren pendaftaran, rasio kelengkapan biodata mahasiswa baru, retensi akademik, dan laporan akreditasi BAN-PT/PDDIKTI.
+          </p>
+</div>
+<!-- Archival Monospace Timestamp -->
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low rounded-lg shrink-0">
+<span class="material-symbols-outlined text-outline text-[18px]">history</span>
+<span class="font-code-nim text-code-nim text-on-surface-variant">Kompilasi: 14 Okt 2024 • 08:30 WIB</span>
+</div>
+</div>
+</section>
+<!-- Filter & Action Toolbar -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.03)] flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Select Filters -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm flex-1">
+<!-- Filter 1 -->
+<div class="flex flex-col gap-1">
+<label class="font-label-field text-label-field text-on-surface-variant">Tahun Akademik</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[18px] text-outline pointer-events-none">event</span>
+<select class="w-full bg-surface-container-low pl-9 pr-8 py-2 rounded-lg font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer">
+<option selected="">2024/2025 (Aktif)</option>
+<option>2023/2024 (Lengkap)</option>
+<option>2022/2023 (Arsip)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Filter 2 -->
+<div class="flex flex-col gap-1">
+<label class="font-label-field text-label-field text-on-surface-variant">Fakultas / Program Studi</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[18px] text-outline pointer-events-none">domain</span>
+<select class="w-full bg-surface-container-low pl-9 pr-8 py-2 rounded-lg font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer">
+<option selected="">Semua Fakultas (4 Fakultas)</option>
+<option>Fakultas Ilmu Komputer (FASILKOM)</option>
+<option>Fakultas Teknik &amp; Rekayasa (FTEK)</option>
+<option>Fakultas Seni &amp; Desain Kreatif (FSRD)</option>
+<option>Fakultas Ekonomi &amp; Bisnis Digital</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Filter 3 -->
+<div class="flex flex-col gap-1">
+<label class="font-label-field text-label-field text-on-surface-variant">Jalur Seleksi</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[18px] text-outline pointer-events-none">how_to_reg</span>
+<select class="w-full bg-surface-container-low pl-9 pr-8 py-2 rounded-lg font-body-sm text-body-sm text-on-surface appearance-none focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer">
+<option selected="">SNBP, SNBT, Mandiri &amp; Afirmasi</option>
+<option>SNBP (Prestasi Nasional)</option>
+<option>SNBT (Tes Tertulis UTBK)</option>
+<option>Mandiri Reguler &amp; Prestasi</option>
+<option>Afirmasi KIP-Kuliah &amp; 3T</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-[18px] text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Action Button Cluster -->
+<div class="flex flex-wrap items-end gap-space-sm shrink-0 pt-2 xl:pt-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-primary font-headline-sm text-[13px] hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+<span>Ekspor XLSX / PDDIKTI</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-primary font-headline-sm text-[13px] hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Unduh Rekap PDF Eksekutif</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-headline-sm text-[13px] hover:bg-primary transition-all active:scale-95 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Buat Laporan Kustom</span>
+</button>
+</div>
+</section>
+<!-- Section 1: Executive KPI Dossier Cards -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Terracotta Accent -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-xl shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary"></div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-field text-label-field text-on-surface-variant">TOTAL REGISTRAN KOHORT 2024</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">group_add</span>
+</div>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-display-hero text-[36px] leading-tight text-primary font-black">2.480</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Mahasiswa</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1 font-body-sm text-body-sm font-semibold text-secondary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+12.4% vs 2023</span>
+</div>
+<span class="font-badge-label text-badge-label text-on-surface-variant font-mono">99.2% Target Kuota</span>
+</div>
+</div>
+<!-- Card 2: Forest Ink Accent -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-xl shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-tertiary-container"></div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-field text-label-field text-on-surface-variant">RASIO BERKAS TERVERIFIKASI 100%</span>
+<span class="material-symbols-outlined text-tertiary text-[22px]">verified_user</span>
+</div>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-display-hero text-[36px] leading-tight text-primary font-black">88.6%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">2.197 Mahasiswa</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm flex items-center justify-between text-body-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-primary font-semibold">241</strong> Menunggu
+          </span>
+<span class="inline-flex items-center gap-1 text-secondary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            42 Review Ulang
+          </span>
+</div>
+</div>
+<!-- Card 3: Sapphire Accent -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-xl shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-on-tertiary-container"></div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-field text-label-field text-on-surface-variant">INDEKS KETEPATAN DATA SIPIL</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-[22px]">badge</span>
+</div>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-display-hero text-[36px] leading-tight text-primary font-black">99.1%</span>
+<span class="font-badge-label text-badge-label bg-surface-container-high text-primary px-2 py-0.5 rounded">A+ Dukcapil</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sinkronisasi NIK Otomatis</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">cloud_done</span>
+</div>
+</div>
+<!-- Card 4: Coral / Rose Marigold Accent -->
+<div class="relative bg-surface-container-lowest p-space-lg rounded-xl shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary-container"></div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-field text-label-field text-on-surface-variant">RETENSI SEMESTER 1 KE 3</span>
+<span class="material-symbols-outlined text-secondary-container text-[22px]">stacked_line_chart</span>
+</div>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-display-hero text-[36px] leading-tight text-primary font-black">94.8%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Benchmark DIKTI</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg py-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Penurunan DO Akademik</span>
+<span class="font-code-nim text-code-nim text-secondary font-bold">-1.8% vs Th. Lalu</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Interactive Analytics & Visualizations -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Container: Matriks Retensi Kohort (7 cols on large desktop, 60% equiv) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm space-y-space-md flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">grid_goldenratio</span>
+<h2 class="font-headline-md text-headline-sm text-primary">Matriks Analisis Retensi Kohort</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tahun Masuk 2020 hingga 2024 • Rasio Keberlanjutan Studi Aktif</p>
+</div>
+<span class="font-code-nim text-[11px] px-2.5 py-1 bg-surface-container rounded-md text-on-surface-variant uppercase">
+            Metode: Triangulasi PDDIKTI
+          </span>
+</div>
+<!-- Cohort Heatmap Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[620px]">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-field text-[11px] uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l-lg">Kohort</th>
+<th class="py-2.5 px-2 text-center">Mhs Awal</th>
+<th class="py-2.5 px-2 text-center">Sem 1</th>
+<th class="py-2.5 px-2 text-center">Sem 2</th>
+<th class="py-2.5 px-2 text-center">Sem 3</th>
+<th class="py-2.5 px-2 text-center">Sem 4</th>
+<th class="py-2.5 px-2 text-center">Sem 5</th>
+<th class="py-2.5 px-2 text-center">Sem 6</th>
+<th class="py-2.5 px-2 text-center">Sem 7</th>
+<th class="py-2.5 px-2 text-center">Sem 8</th>
+<th class="py-2.5 px-3 rounded-r-lg text-right">Lulus Tepat</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-sm text-body-sm">
+<!-- Row 2020 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-3 font-headline-sm text-[13px] text-primary">2020</td>
+<td class="py-3 px-2 text-center font-code-nim text-on-surface-variant">1.940</td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-highest text-primary">100%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-high text-primary">98.1%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-high text-primary">96.4%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container text-primary">95.0%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container text-primary">94.2%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container text-primary">93.8%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-low text-on-surface-variant">92.9%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-low text-on-surface-variant">91.4%</span></td>
+<td class="py-3 px-3 text-right"><span class="px-2.5 py-1 rounded-full font-code-nim text-[11px] font-bold bg-secondary-fixed text-on-secondary-fixed">88.2%</span></td>
+</tr>
+<!-- Row 2021 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-3 font-headline-sm text-[13px] text-primary">2021</td>
+<td class="py-3 px-2 text-center font-code-nim text-on-surface-variant">2.110</td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-highest text-primary">100%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-high text-primary">98.5%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-high text-primary">97.0%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container text-primary">95.6%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container text-primary">94.8%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container text-primary">94.1%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-low text-on-surface-variant">93.0%</span></td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-3 text-right text-outline-variant font-code-nim text-[11px]">Progres</td>
+</tr>
+<!-- Row 2022 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-3 font-headline-sm text-[13px] text-primary">2022</td>
+<td class="py-3 px-2 text-center font-code-nim text-on-surface-variant">2.280</td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-highest text-primary">100%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-high text-primary">98.7%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-high text-primary">96.8%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container text-primary">95.9%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container text-primary">95.2%</span></td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-3 text-right text-outline-variant font-code-nim text-[11px]">Progres</td>
+</tr>
+<!-- Row 2023 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-3 font-headline-sm text-[13px] text-primary">2023</td>
+<td class="py-3 px-2 text-center font-code-nim text-on-surface-variant">2.350</td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-highest text-primary">100%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-high text-primary">99.1%</span></td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-semibold bg-surface-container-high text-primary">97.4%</span></td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-3 text-right text-outline-variant font-code-nim text-[11px]">Progres</td>
+</tr>
+<!-- Row 2024 -->
+<tr class="bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-3 font-headline-sm text-[13px] text-secondary font-bold">2024 (Baru)</td>
+<td class="py-3 px-2 text-center font-code-nim font-bold text-primary">2.480</td>
+<td class="py-3 px-1.5 text-center"><span class="px-2 py-0.5 rounded font-code-nim text-[11px] font-bold bg-primary text-on-primary">100%</span></td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-1.5 text-center text-outline-variant font-code-nim text-[11px]">-</td>
+<td class="py-3 px-3 text-right text-outline-variant font-code-nim text-[11px]">Berjalan</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Takeaway Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm border-l-4 border-secondary">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">insights</span>
+<div class="space-y-0.5">
+<span class="font-headline-sm text-[13px] text-primary block">Insight Kinerja Retensi Akademik</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Retensi tertinggi tercatat di <strong class="text-primary">Fakultas Ilmu Komputer (FASILKOM)</strong> pada level <strong class="text-secondary">96.2%</strong> hingga Semester 4. Kelulusan tepat waktu naik konsisten +2.4% tiap kohort berkat kurikulum OBE.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Container: Distribusi Geografis & Jalur Masuk (5 cols, 40% equiv) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm space-y-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">public</span>
+<h2 class="font-headline-md text-headline-sm text-primary">Distribusi Geografis &amp; Jalur Masuk</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Demografi Asal Calon Mahasiswa Baru Tahun 2024</p>
+</div>
+<!-- Regional Origin Visual Stack -->
+<div class="space-y-space-sm">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-label-field text-label-field text-on-surface-variant uppercase">Konsentrasi Domisili Wilayah</span>
+<span class="font-code-nim text-[11px] text-outline">Total 34 Provinsi</span>
+</div>
+<!-- Segmented Bar -->
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 62%" title="Jawa Barat 62%"></div>
+<div class="bg-secondary h-full" style="width: 18%" title="DKI Jakarta 18%"></div>
+<div class="bg-on-tertiary-container h-full" style="width: 9%" title="Jawa Tengah &amp; DIY 9%"></div>
+<div class="bg-surface-dim h-full" style="width: 11%" title="Luar Jawa / 3T 11%"></div>
+</div>
+<!-- Origin Legend -->
+<div class="grid grid-cols-2 gap-y-2 gap-x-space-md pt-1 font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0"></span>
+<span class="text-on-surface truncate">Jawa Barat</span>
+<span class="font-code-nim text-primary ml-auto font-bold">62%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shrink-0"></span>
+<span class="text-on-surface truncate">DKI Jakarta</span>
+<span class="font-code-nim text-primary ml-auto font-bold">18%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container shrink-0"></span>
+<span class="text-on-surface truncate">Jateng &amp; DIY</span>
+<span class="font-code-nim text-primary ml-auto font-bold">9%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-dim shrink-0"></span>
+<span class="text-on-surface truncate">Luar Jawa / 3T</span>
+<span class="font-code-nim text-primary ml-auto font-bold">11%</span>
+</div>
+</div>
+</div>
+<!-- Admission Channel Progress Bars -->
+<div class="space-y-space-sm pt-space-xs">
+<span class="font-label-field text-label-field text-on-surface-variant uppercase block">Komposisi Jalur Penerimaan</span>
+<div class="space-y-2">
+<!-- SNBT -->
+<div>
+<div class="flex justify-between items-center text-body-sm mb-1">
+<span class="text-on-surface font-medium">SNBT (Seleksi Nasional Tes)</span>
+<span class="font-code-nim text-[12px] font-bold text-primary">1.116 Mhs (45%)</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-primary rounded-full h-2" style="width: 45%"></div>
+</div>
+</div>
+<!-- SNBP -->
+<div>
+<div class="flex justify-between items-center text-body-sm mb-1">
+<span class="text-on-surface font-medium">SNBP (Prestasi Rapor Siswa)</span>
+<span class="font-code-nim text-[12px] font-bold text-primary">868 Mhs (35%)</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-secondary rounded-full h-2" style="width: 35%"></div>
+</div>
+</div>
+<!-- Mandiri -->
+<div>
+<div class="flex justify-between items-center text-body-sm mb-1">
+<span class="text-on-surface font-medium">Seleksi Mandiri Reguler</span>
+<span class="font-code-nim text-[12px] font-bold text-primary">372 Mhs (15%)</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-on-tertiary-container rounded-full h-2" style="width: 15%"></div>
+</div>
+</div>
+<!-- KIP-K / 3T -->
+<div>
+<div class="flex justify-between items-center text-body-sm mb-1">
+<span class="text-on-surface font-medium">Beasiswa Afirmasi KIP-K / 3T</span>
+<span class="font-code-nim text-[12px] font-bold text-primary">124 Mhs (5%)</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-secondary-container rounded-full h-2" style="width: 5%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Gender Balance Mini-Stat Visualizer -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[24px]">wc</span>
+<div>
+<span class="font-label-field text-label-field text-on-surface-variant block uppercase">Rasio Gender</span>
+<span class="font-headline-sm text-[14px] text-primary">54% Laki-laki / 46% Perempuan</span>
+</div>
+</div>
+<!-- Micro Visualizer Gauge -->
+<div class="flex items-center gap-1">
+<div class="w-10 h-2 rounded-l-full bg-primary" title="54% Pria"></div>
+<div class="w-8 h-2 rounded-r-full bg-secondary-fixed-dim" title="46% Wanita"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Tabel Rincian Kelengkapan Berkas Per Program Studi -->
+<section class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">fact_check</span>
+<h2 class="font-headline-md text-headline-sm text-primary">Status Verifikasi &amp; Berkas Per Program Studi</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monitoring kepatuhan arsip berkas NIK, Ijazah, Slip UKT &amp; Surat Pernyataan Mahasiswa Baru</p>
+</div>
+<!-- Inline Quick Filter Search -->
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-[16px] text-outline">search</span>
+<input class="bg-surface-container-low pl-8 pr-3 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-1 focus:ring-primary w-44" placeholder="Filter prodi..." type="text"/>
+</div>
+<button class="p-2 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" title="Muat Ulang Data" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+</div>
+</div>
+<!-- Relational Editorial Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[980px]">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-field text-[11px] uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Program Studi &amp; Fakultas</th>
+<th class="py-3 px-3">Kuota &amp; Keterisian</th>
+<th class="py-3 px-3 text-center">Berkas Terverifikasi</th>
+<th class="py-3 px-3 text-center">Menunggu Validasi</th>
+<th class="py-3 px-3 text-center">Perlu Perbaikan</th>
+<th class="py-3 px-3 text-center">Durasi SLA</th>
+<th class="py-3 px-4 rounded-r-lg text-right">Aksi Terjadwal</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-sm text-body-sm">
+<!-- Row 1: Teknik Informatika -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-8 rounded-full bg-secondary shrink-0"></span>
+<div>
+<span class="font-headline-sm text-[14px] text-primary block group-hover:text-secondary transition-colors">S1 - Teknik Informatika</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Fakultas Ilmu Komputer (FASILKOM)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="space-y-1 w-36">
+<div class="flex justify-between text-[11px] font-code-nim">
+<span class="font-bold text-primary">120 / 120</span>
+<span class="text-secondary font-semibold">100%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5">
+<div class="bg-secondary rounded-full h-1.5 w-full"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-surface-container-high text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  112 (93.3%)
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-medium bg-secondary-fixed text-on-secondary-fixed">
+                  6 Mhs
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-error-container text-on-error-container">
+                  2 Berkas
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="font-code-nim text-on-surface-variant font-medium">3.8 Jam</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Lihat Berkas Masuk" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary-fixed/50 transition-colors" title="Kirim Notifikasi WhatsApp" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Sistem Informasi -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-8 rounded-full bg-secondary shrink-0"></span>
+<div>
+<span class="font-headline-sm text-[14px] text-primary block group-hover:text-secondary transition-colors">S1 - Sistem Informasi</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Fakultas Ilmu Komputer (FASILKOM)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="space-y-1 w-36">
+<div class="flex justify-between text-[11px] font-code-nim">
+<span class="font-bold text-primary">100 / 100</span>
+<span class="text-secondary font-semibold">100%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5">
+<div class="bg-secondary rounded-full h-1.5 w-full"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-surface-container-high text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  92 (92.0%)
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-medium bg-secondary-fixed text-on-secondary-fixed">
+                  7 Mhs
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-error-container text-on-error-container">
+                  1 Berkas
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="font-code-nim text-on-surface-variant font-medium">4.1 Jam</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Lihat Berkas Masuk" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary-fixed/50 transition-colors" title="Kirim Notifikasi WhatsApp" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Teknik Elektro -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-8 rounded-full bg-on-tertiary-container shrink-0"></span>
+<div>
+<span class="font-headline-sm text-[14px] text-primary block group-hover:text-secondary transition-colors">S1 - Teknik Elektro</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Fakultas Teknik &amp; Rekayasa (FTEK)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="space-y-1 w-36">
+<div class="flex justify-between text-[11px] font-code-nim">
+<span class="font-bold text-primary">80 / 80</span>
+<span class="text-secondary font-semibold">100%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5">
+<div class="bg-on-tertiary-container rounded-full h-1.5 w-full"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-surface-container-high text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  71 (88.7%)
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-medium bg-secondary-fixed text-on-secondary-fixed">
+                  6 Mhs
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-error-container text-on-error-container">
+                  3 Berkas
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="font-code-nim text-on-surface-variant font-medium">5.4 Jam</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Lihat Berkas Masuk" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary-fixed/50 transition-colors" title="Kirim Notifikasi WhatsApp" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Desain Komunikasi Visual -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-8 rounded-full bg-secondary-container shrink-0"></span>
+<div>
+<span class="font-headline-sm text-[14px] text-primary block group-hover:text-secondary transition-colors">S1 - Desain Komunikasi Visual</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Fakultas Seni &amp; Desain Kreatif (FSRD)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="space-y-1 w-36">
+<div class="flex justify-between text-[11px] font-code-nim">
+<span class="font-bold text-primary">90 / 90</span>
+<span class="text-secondary font-semibold">100%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5">
+<div class="bg-secondary-container rounded-full h-1.5 w-full"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-surface-container-high text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  76 (84.4%)
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-medium bg-secondary-fixed text-on-secondary-fixed">
+                  10 Mhs
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-error-container text-on-error-container">
+                  4 Berkas
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="font-code-nim text-on-surface-variant font-medium">4.8 Jam</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Lihat Berkas Masuk" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary-fixed/50 transition-colors" title="Kirim Notifikasi WhatsApp" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Manajemen Rekayasa -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-8 rounded-full bg-outline shrink-0"></span>
+<div>
+<span class="font-headline-sm text-[14px] text-primary block group-hover:text-secondary transition-colors">S1 - Manajemen Rekayasa</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Fakultas Teknik &amp; Rekayasa (FTEK)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="space-y-1 w-36">
+<div class="flex justify-between text-[11px] font-code-nim">
+<span class="font-bold text-primary">60 / 60</span>
+<span class="text-secondary font-semibold">100%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5">
+<div class="bg-outline rounded-full h-1.5 w-full"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-surface-container-high text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  55 (91.6%)
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-medium bg-secondary-fixed text-on-secondary-fixed">
+                  4 Mhs
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-code-nim text-[12px] font-bold bg-error-container text-on-error-container">
+                  1 Berkas
+                </span>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="font-code-nim text-on-surface-variant font-medium">3.4 Jam</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Lihat Berkas Masuk" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-secondary-fixed/50 transition-colors" title="Kirim Notifikasi WhatsApp" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Table Footer -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm text-body-sm text-on-surface-variant">
+<span class="font-body-sm text-[13px]">
+          Menampilkan <strong class="text-primary font-medium">5 dari 18</strong> Program Studi terakreditasi
+        </span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded-lg bg-primary-container text-on-primary font-code-nim text-[12px] font-bold" type="button">1</button>
+<button class="px-3 py-1 rounded-lg hover:bg-surface-container-low text-primary font-code-nim text-[12px]" type="button">2</button>
+<button class="px-3 py-1 rounded-lg hover:bg-surface-container-low text-primary font-code-nim text-[12px]" type="button">3</button>
+<button class="px-3 py-1 rounded-lg hover:bg-surface-container-low text-primary font-code-nim text-[12px]" type="button">4</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div></main></div></body></html>
